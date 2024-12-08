@@ -2,46 +2,38 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz rekrutacyjny do szkoły piłkarskiej</title>
+    <title>Rekrutacja do szkółki piłkarskiej</title>
 </head>
-<body>
-    <h1>Formularz o rekrutację do szkoły piłkarskiej</h1>
-    <form action="mailto:pilkanozaszkolka@gmail.com" method="post" enctype="text/plain">
-        <label for="imie">Imię:</label><br>
-        <input type="text" id="imie" name="imie" required><br><br>
+<body style="font-family: Arial;">
+    <h1>Formularz rekrutacyjny do szkółki piłkarskiej</h1>
+    <form action="mailto:pilkanozaszkolka@gmail.com" method="post">
+        <label>Imię:</label><br>
+        <input type="text" name="imie"><br><br>
 
-        <label for="nazwisko">Nazwisko:</label><br>
-        <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+        <label>Nazwisko:</label><br>
+        <input type="text" name="nazwisko"><br><br>
 
-        <label for="data_urodzenia">Data urodzenia:</label><br>
-        <input type="date" id="data_urodzenia" name="data_urodzenia" required><br><br>
+        <label>Data urodzenia</label><br>
+        <input type="text" name="data_urodzenia" placeholder="dd.mm.rrrr"><br><br>
 
         <label>Jak oceniasz swoje umiejętności piłkarskie?</label><br>
-        <input type="radio" id="super" name="umiejetnosci" value="super">
-        <label for="super">Super</label><br>
-        <input type="radio" id="dobre" name="umiejetnosci" value="dobre">
-        <label for="dobre">Dobre</label><br>
-        <input type="radio" id="srednie" name="umiejetnosci" value="srednie">
-        <label for="srednie">Średnie</label><br>
-        <input type="radio" id="slabe" name="umiejetnosci" value="slabe">
-        <label for="slabe">Słabe</label><br><br>
+        <input type="radio" name="umiejetnosci" value="super"> Super<br>
+        <input type="radio" name="umiejetnosci" value="dobre"> Dobre<br>
+        <input type="radio" name="umiejetnosci" value="srednie"> Średnie<br>
+        <input type="radio" name="umiejetnosci" value="slabe"> Słabe<br><br>
 
         <label>Byłeś kiedyś w szkole piłkarskiej? Jeśli tak, to napisz w jakiej:</label><br>
-        <input type="radio" id="tak" name="szkola_pilkarska" value="tak">
-        <label for="tak">Tak</label><br>
-        <input type="radio" id="nie" name="szkola_pilkarska" value="nie">
-        <label for="nie">Nie</label><br><br>
-        <textarea id="szkola" name="szkola" rows="4" cols="50" placeholder="Miejsce do pisania..."></textarea><br><br>
+        <input type="radio" name="szkola_pilkarska" value="tak"> Tak<br>
+        <input type="radio" name="szkola_pilkarska" value="nie"> Nie<br>
+        <textarea name="szkola" rows="3" cols="30" placeholder="Miejsce do pisania"></textarea><br><br>
 
         <label>Jaki klub najbardziej lubisz i dlaczego?</label><br>
-        <label for="klub">Jaki klub:</label><br>
-        <input type="text" id="klub" name="klub"><br><br>
-        <label for="dlaczego">Dlaczego?</label><br>
-        <textarea id="dlaczego" name="dlaczego" rows="4" cols="50" placeholder="Wpisz powód..."></textarea><br><br>
+        <input type="text" name="klub" placeholder="Jaki klub?"><br>
+        <textarea name="dlaczego" rows="3" cols="30" placeholder="Dlaczego?"></textarea><br><br>
 
         <button type="submit">Wyślij</button>
 <A HREF="index.html"> wróć </A>
     </form>
 </body>
 </html>
+
